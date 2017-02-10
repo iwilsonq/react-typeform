@@ -4,3 +4,6 @@
 
 The next evolution in better forms for better UX. Inspired by [Typeform](https://www.typeform.com/
 ).
+
+
+View it [live](https://react-typeform.herokuapp.com/)
