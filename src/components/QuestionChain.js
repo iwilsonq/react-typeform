@@ -7,7 +7,6 @@ export default class QuestionChain extends Component {
   };
 
   render() {
-    console.log(this.state, this.props);
     return (
       <div className="question-chain">
         {this.props.questions.map((q, i) => {

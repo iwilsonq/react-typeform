@@ -10,11 +10,13 @@ const Question = props => {
         <input
           className='text-input'
           name={props.subject}
+          placeholder={props.subject}
           type="text"
         /> :
         <textarea
           className='multi-line-text-input'
           name={props.subject}
+          placeholder={props.subject}
           type="text"
           rows="10"
         ></textarea>

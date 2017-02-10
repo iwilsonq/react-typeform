@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Intro from './Intro';
 import QuestionChain from './QuestionChain';
+import Thanks from './Thanks';
 
 const questions = [
   {
@@ -24,7 +25,9 @@ export default class Form extends Component {
   render() {
     return (
       <div className="form">
+        <Intro />
         <QuestionChain questions={questions} />
+        <Thanks />
       </div>
     );
   }
