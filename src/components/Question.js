@@ -3,7 +3,11 @@ import Button from './Button';
 
 const Question = props => {
   return (
-    <div className="question">
+    <div
+      className="question"
+      name={props.id}
+      id={props.id}
+    >
       <h2>{props.ask}</h2>
 
       { props.answerType === 'text' ?
