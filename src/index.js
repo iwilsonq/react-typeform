@@ -1,10 +1,9 @@
 import React from 'react';
 import { render } from 'react-dom';
 import '../style/style.sass';
-
-const App = () => <div>App</div>;
+import Form from './components/Form';
 
 render(
-  <App />,
+  <Form />,
   document.getElementById('root')
 );

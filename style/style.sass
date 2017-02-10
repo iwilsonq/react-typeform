@@ -1,2 +1,52 @@
-html, body
-  background-color: red
+// Backgrounds
+$udemy: #17aa1c
+$footer: #333333
+$white: #ffffff
+$grey: #f4f4f4
+
+// Texts
+$p: #9a9a9a
+$h6: #666
+$link: #1476d7
+$h2: #111
+
+html, body, h2, p
+  padding: 0
+  margin: 0
+  font-family: Open Sans,sans-serif
+
+.form
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  min-height: 80vh
+  background-color: $udemy
+
+.button
+  padding: 10px 5px
+  background-color: $grey
+  outline: none
+  border: none
+  color: $udemy
+  text-transform: uppercase
+  font-size: 1rem
+  font-weight: bold
+  border: 2px solid $link
+  transition: 0.2s
+  margin-top: 20px
+  &:hover
+    background-color: $link
+    color: $white
+    transition: 0.2s
+
+.intro
+  display: flex
+  flex-direction: column
+  align-items: center
+  h2
+    color: $white
+    margin-bottom: 5px
+  p
+    color: $grey
+    align-self: flex-end
