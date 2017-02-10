@@ -1,9 +1,9 @@
 import React from 'react';
 import { render } from 'react-dom';
 import '../style/style.sass';
-import Form from './components/Form';
+import Routes from './routes';
 
 render(
-  <Form />,
+  <Routes />,
   document.getElementById('root')
 );

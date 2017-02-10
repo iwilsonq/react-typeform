@@ -1,7 +1,4 @@
 import React, { Component } from 'react';
-import Intro from './Intro';
-import QuestionChain from './QuestionChain';
-import Thanks from './Thanks';
 
 const questions = [
   {
@@ -22,12 +19,18 @@ const questions = [
 ];
 
 export default class Form extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      questions
+    };
+  }
+
   render() {
     return (
       <div className="form">
-        <Intro />
-        <QuestionChain questions={questions} />
-        <Thanks />
+        {React.cloneElement(this.props.children, this.state)}
       </div>
     );
   }
