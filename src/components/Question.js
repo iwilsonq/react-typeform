@@ -22,7 +22,9 @@ const Question = props => {
         ></textarea>
       }
 
-    <Button onClick={props.onSubmit}>
+    <Button
+      onClick={() => { props.onSubmit(props.questionNumber) }}
+      >
       Submit
     </Button>
     </div>
