@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
+    "production": "NODE_ENV=production npm start",
     "build": "NODE_ENV=production npm run clean && webpack -p",
     "clean": "rimraf dist"
   },
@@ -35,6 +36,7 @@
     "extract-text-webpack-plugin": "^1.0.1",
     "html-webpack-plugin": "^2.26.0",
     "node-sass": "^4.5.0",
+    "rimraf": "^2.5.4",
     "sass-loader": "^5.0.1",
     "style-loader": "^0.13.1",
     "webpack": "^2.2.0-rc.0",
